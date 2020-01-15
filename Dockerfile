@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN apt-get install nginx-full uwsgi uwsgi-core uwsgi-plugin-python vim php7.3 php7.3-fpm  python-setuptools \
+RUN apt-get install nginx-full uwsgi uwsgi-core uwsgi-plugin-python vim php7 php7-fpm  python-setuptools \
     python-pip 
 
 RUN pip install Django==1.3.7
