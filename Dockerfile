@@ -6,8 +6,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install software-properties-
 RUN export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && add-apt-repository ppa:ondrej/php -y && apt-get update && apt-get upgrade -y
 
 RUN apt-get install nginx-full uwsgi uwsgi-core uwsgi-plugin-python vim  python-setuptools \
-    python-pip -y  php-net-ipv4 python-virtualenv  && \
-    libmysqlclient18 libmysqlclient-dev
+    python-pip -y  php-net-ipv4 python-virtualenv
 
 #RUN apt-get install -y php7.1 php7.1-fpm php7.1-mbstring php7.1-xml php7.1-mysql virtualenv composer
 
