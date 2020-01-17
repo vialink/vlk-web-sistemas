@@ -5,6 +5,6 @@ cd /var/www/vialink/wiki
 
 service uwsgi start
 
-service php7.1-fpm start
+service php7.3-fpm start
 
 nginx -g "daemon off;"
