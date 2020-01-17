@@ -7,7 +7,7 @@ RUN export LC_ALL=C.UTF-8 && export LANG=C.UTF-8 && add-apt-repository ppa:ondre
 
 RUN apt-get install nginx-full uwsgi uwsgi-core uwsgi-plugin-python vim  python-setuptools \
     python-pip -y  php-net-ipv4 python-virtualenv virtualenv && \
-    libmysqlclient20 libmysqlclient-dev
+    libmysqlclient-dev
 
 RUN apt-get install -y php7.3 php7.3-fpm php7.3-mbstring php7.3-xml php7.3-mysql virtualenv composer
 
